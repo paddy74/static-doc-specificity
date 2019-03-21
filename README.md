@@ -4,6 +4,38 @@
 
 The project calculates a query-independent document specificity score for use with document ranking.
 
+## Getting Started
+
+### Adding to your project
+
+The reccommended way to add this library to you project is by including the following to your CMakeLists.txt:
+
+```cmake
+cmake_minimum_required(VERSION 3.13)
+project(myProject)
+
+include_directories("path/to/static-doc-specificity/include")
+add_subdirectory("path/to/static-doc-specificity")
+
+add_executable(myProject myProject_SOURCES)
+# or `add_library(myProject myProject_SOURCES)`
+
+target_link_libraries(myProject staticspecrank)
+```
+
+### Usage
+
+The library has can be included in your source files with the following:
+
+```c++
+#include <staticSpecRank/Term.h>
+#include <staticSpecRank/calcSpecificityScore.h>
+```
+
+The score for a given document can be calculated by calling the `specScore::calcSpecificityScore(scoreBase, numDocsInCorpus, docSize, docTermVector)` where the `scoreBase` variable is either 0 for NIDF or 1 for term entropy.
+
+The docTermVector must be of type `std::vector<Term>`. See the file [`include/staticSpecRank/Term.h`](include/staticSpecRank/Term.h) for details on constructing the term vector.
+
 ## Versioning
 
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](tags).
