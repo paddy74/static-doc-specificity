@@ -4,6 +4,13 @@
 
 The project calculates a query-independent document specificity score for use with document ranking.
 
+## Methods
+
+This project provides the following models:
+
+- Normalized inverse document frequency based specificity score
+- Term entropy based specificity score
+
 ## Getting Started
 
 ### Adding to your project
