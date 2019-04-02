@@ -11,6 +11,8 @@ This project provides the following models:
 - Normalized inverse document frequency based specificity score
 - Term entropy based specificity score
 
+More details on the formulas used can be found in [FORMULAS.md](FORMULAS.md).
+
 ## Getting Started
 
 ### Adding to your project
