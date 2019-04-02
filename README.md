@@ -2,7 +2,9 @@
 
 # Query-Independent Document Specificity Scoring
 
-The project calculates a query-independent document specificity score for use with document ranking.
+The project calculates a pointwise query-independent document specificity score for use with document ranking.
+
+Where standard pointwise learning-to-rank methods calculate their scores based on a term that appears both in the query and document, the pointwise learning-to-rank methods used in this project are conducted for every term in the document.
 
 ## Methods
 
@@ -51,7 +53,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Patrick Cox** - [paddy74](https://github.com/paddy74)
+- **Patrick Cox** - [paddy74](https://github.com/paddy74)
 
 ## License
 
@@ -61,4 +63,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 This project is based on the following paper:
 
-* Zheng L., Cox I.J. (2009) Re-ranking Documents Based on Query-Independent Document Specificity. In: Andreasen T., Yager R.R., Bulskov H., Christiansen H., Larsen H.L. (eds) Flexible Query Answering Systems. FQAS 2009. Lecture Notes in Computer Science, vol 5822. Springer, Berlin, Heidelberg
+- Zheng L., Cox I.J. (2009) Re-ranking Documents Based on Query-Independent Document Specificity. In: Andreasen T., Yager R.R., Bulskov H., Christiansen H., Larsen H.L. (eds) Flexible Query Answering Systems. FQAS 2009. Lecture Notes in Computer Science, vol 5822. Springer, Berlin, Heidelberg
